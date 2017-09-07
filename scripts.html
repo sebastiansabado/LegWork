@@ -1,0 +1,76 @@
+<!--
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#selected_season_id').on('change', function(){
+            var season_id = $('select#selected_season_id').find('option:selected').val();
+            if(season_id){
+                $.ajax({
+                    type: 'POST',
+                    url: 'ajax.php',
+                    data:'season_id='+season_id,
+                    success: function(response){
+                        $('#season_stats_table').html(response);
+                    }
+                    
+                });
+            }
+        }
+                      )
+    }
+    
+    )
+    </script>
+-->
+
+ <script>
+    function onChange(){
+        var url = 'ajax.php';
+        var season_year = $('select#selected_season_id').find('select option:selected').val();
+        var data = {
+            season_id : "season_year"
+        };
+        var callback = function (response){
+            var stats_table = $('season_stats_table');
+            stats_table.append(response);
+        }
+        $.get(url, data, callback);
+    }
+</script>
+
+<script>
+    $(document).ready(function(){
+$('#selected_season_id').on('change', function(){
+
+// Get value of selected season
+var season_id = $('select#selected_season_id').find('option:selected').val();
+
+// If season_id exists, run AJAX request
+if(season_id){
+$.ajax({
+type: 'POST',
+url: 'ajax.php',
+data:'season_id='+season_id,
+success: function(response){
+$('#season_stats_table').html(response);
+}
+});
+}
+
+});
+});
+
+</script>
+ <table class="table table-hover" id="ownerTable">
+                <thead>
+                  <tr>
+                    <th>Owner Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?php foreach($results as $result) :?>
+                  <tr>
+                  <td><?php echo $result['owner_name']; ?></td>
+                  </tr>
+                  <?php endforeach; ?>
+                </tbody>
+               </table>

@@ -1,0 +1,338 @@
+/*!
+ * Start Bootstrap - Business Casual (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: url('../img/homepagebackground.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #000;
+}
+
+hr {
+    max-width: 400px;
+    border-color: #999999;
+}
+
+.brand,
+.address-bar {
+    display: none;
+}
+
+.login {
+  margin:0 auto;
+  max-width:500px;
+}
+.login-header {
+  color:#fff;
+  text-align:center;
+  font-size:300%;
+}
+.login-header h1 {
+   text-shadow: 0px 5px 15px #000;
+}
+.login-form {
+  border:2px solid #999;
+  background:#2c3e50;
+  border-radius:10px;
+  box-shadow:0px 0px 10px #000;
+}
+.login-form h3 {
+  text-align:left;
+  margin-left:40px;
+  color:#fff;
+}
+.login-form {
+  box-sizing:border-box;
+  padding-top:15px;
+  margin:50px auto;
+  text-align:center;
+	overflow: hidden;
+}
+.login input[type="text"],
+.login input[type="password"] {
+  width: 100%;
+	max-width:400px;
+  height:30px;
+  font-family: 'Ubuntu', sans-serif;
+  margin:10px 0;
+  border-radius:5px;
+  border:2px solid #f2f2f2;
+  outline:none;
+  padding-left:10px;
+}
+.login-form input[type="button"] {
+  height:30px;
+  width:100px;
+  /*background:#fff;*/
+  border:1px solid #f2f2f2;
+  border-radius:20px;
+  color: slategrey;
+  text-transform:uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  cursor:pointer;
+}
+.sign-up{
+  color:#f2f2f2;
+  cursor:pointer;
+  text-decoration:underline;
+  margin-top:100px;
+}
+.form-signin {
+    max-width: 500px;
+    padding: 19px 29px 29px;
+    margin: 0 auto;
+	//margin-top:90px;
+    margin-bottom:20px;
+    background-color: #fff;
+	
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+       -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,.05);
+			
+	font-family:Tahoma, Geneva, sans-serif;
+	color:#990000;
+	font-weight:lighter;
+}
+.form-signin .form-signin-heading{
+    color:#00A2D1;
+}
+.form-signin input[type="text"],
+.form-signin input[type="password"],
+.form-signin input[type="email"] {
+    font-size: 16px;
+    height: 45px;
+    padding: 7px 9px;
+}
+
+.signin-form, .body-container
+{
+	//border:solid red 1px;
+	//margin-top:110px;
+}
+#btn-submit{
+	height:45px;
+}
+.no-access {
+  color:#E86850;
+  text-decoration:underline;
+  cursor:pointer;  
+}
+.try-again {
+  color:#f2f2f2;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px; 
+}
+
+.img-full {
+    min-width: 100%;
+}
+.brand-before,
+.brand-name {
+    text-transform: capitalize;
+}
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.intro-text {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/*.btn.btn-primary.dropdown-toggle{
+  
+}*/
+
+/********toggle Dropdowns 10/19 ***********/
+.dropdown#league-name-dropdown {
+  text-align:center;
+}
+
+.dropdown#league-year-dropdown {
+  text-align:center;
+}
+
+/*************Accordion *****************/
+
+/****************Added 10/25 under player rater brand**************/
+.dropdown#member-identifier{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  border: 1px solid #fff;
+  background: rgba(255,255,255,0.9);
+  
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+footer {
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+footer p {
+    margin: 0;
+    padding: 50px 0;
+}
+
+@media screen and (min-width:996px) {
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .nav>li>a {
+        padding: 35px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+}
+/*Media Querie*/
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@media only screen and (min-width : 150px) and (max-width : 530px){
+  .login-form h3 {
+    text-align:center;
+    margin:0;
+  }
+  .sign-up, .no-access {
+    margin:10px 0;
+  }
+  .login-button {
+    margin-bottom:10px;
+  }
+}
+
